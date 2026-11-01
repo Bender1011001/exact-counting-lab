@@ -133,20 +133,26 @@ def ring_factory(p):
 
 
 @contextmanager
-def modular_adapter(p):
+def modular_adapter(p, measurement_mode="integer"):
+    if measurement_mode not in ("integer", "residue", "field"):
+        raise ValueError("Unknown measurement mode")
     original_poly, original_prepare = ref.Poly, ref._prepare_point
     poly, reduce_scalar = ring_factory(p)
 
     def prepare(design, t):
+        if measurement_mode == "field":
+            from field_fibers import prepare_point
+            return prepare_point(design, t, p, reduce_scalar)
         point, own, lam, prepared = original_prepare(design, t)
         own_mod = [[{i: reduce_scalar(v) for i, v in row.items()} for row in clause] for clause in own]
         lam_mod = [[{h: [reduce_scalar(v) for v in row] for h, row in form.items()}
                     for form in clause] for clause in lam]
-        prep_mod = [(clauses, [(assignment, measurement,
+        prep_mod = [(clauses, [(assignment, (tuple(y % p for y in measurement)
+                                           if measurement_mode == "residue" else measurement),
                               {key: reduce_scalar(value) for key, value in values.items()})
                              for assignment, measurement, values in entries])
                     for clauses, entries in prepared]
-        # Measurements remain exact integer keys, not field residues.
+        # The default preserves exact keys; opt-in modes quotient them in F_p.
         return point, own_mod, lam_mod, prep_mod
 
     ref.Poly, ref._prepare_point = poly, prepare
@@ -202,19 +208,22 @@ def hermite_modular(data, degree, p):
     return H[0] % p
 
 
-def modular_data(design, n, q, p, reconstruction=None):
+def modular_data(design, n, q, p, reconstruction=None, measurement_mode="integer", orders=None):
     if reconstruction is None:
         reconstruction = lab.histogram_reconstruction
     # Reject bad rational coefficients even if a later cancellation might hide them.
-    with modular_adapter(p) as reduce_scalar:
+    with modular_adapter(p, measurement_mode) as reduce_scalar:
         for forms in design.P:
             for form in forms:
                 for cs in form.values():
                     for c in cs:
                         reduce_scalar(c)
         cache, data, counters = {}, {}, ref.ToyCounters()
-        for t in range(1, design.Q+1):
-            coefficients = reconstruction(design, n, t, q, counters, cache)
+        selected_orders = ({t:q for t in range(1,design.Q+1)} if orders is None else orders)
+        if any(not 1 <= t <= design.Q or not 0 <= order <= q for t,order in selected_orders.items()):
+            raise ValueError("Invalid Taylor point/order plan")
+        for t,order in sorted(selected_orders.items()):
+            coefficients = reconstruction(design, n, t, order, counters, cache)
             data.update({(t,j): c for j,c in enumerate(coefficients)})
         return data, counters
 
@@ -265,16 +274,21 @@ def disjoint_clause_bound(design, n):
 
 
 def exact_modular_count(design, n, q, primes=PRIMES, reconstruction=None,
-                        use_disjoint_bound=False):
+                        use_disjoint_bound=False, measurement_mode="integer", use_form_degree=False):
     if n < 0:
         raise ValueError("Nonnegative declared variable count required")
     upper_bound, bound_certificate = ((disjoint_clause_bound(design, n)) if use_disjoint_bound
                                        else (1 << n, {"kind": "all_assignments"}))
+    degree, orders = design.M*design.degP, None
+    if use_form_degree:
+        from degree_plan import recovery_plan
+        degree, orders = recovery_plan(design,q)
     answer, modulus, used, skipped = 0, 1, [], []
     for p in primes:
         try:
-            data, _ = modular_data(design,n,q,p,reconstruction=reconstruction)
-            residue = hermite_modular(data,design.M*design.degP,p)
+            data, _ = modular_data(design,n,q,p,reconstruction=reconstruction,
+                                   measurement_mode=measurement_mode,orders=orders)
+            residue = hermite_modular(data,degree,p)
         except BadPrime as error:
             skipped.append({"prime":p,"reason":str(error)})
             continue
@@ -284,7 +298,9 @@ def exact_modular_count(design, n, q, primes=PRIMES, reconstruction=None,
             if not 0 <= answer <= upper_bound:
                 raise ArithmeticError("Recovered count outside its certified range")
             return answer, {"primes":used,"skipped":skipped,"modulus":modulus,
-                            "upper_bound":upper_bound,"bound_certificate":bound_certificate}
+                            "upper_bound":upper_bound,"bound_certificate":bound_certificate,
+                            "degree_bound":degree,"taylor_orders":orders,
+                            "measurement_mode":measurement_mode}
     raise ValueError("Insufficient valid prime product for certified recovery")
 
 

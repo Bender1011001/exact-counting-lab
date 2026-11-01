@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use these experiments, cite this repository and the upstream work identified in README.md."
+title: "Exact Counting Lab"
+type: software
+authors:
+  - name: "Bender1011001"
+repository-code: "https://github.com/Bender1011001/exact-counting-lab"
+license: MIT
+keywords:
+  - exact model counting
+  - SAT
+  - finite fields
+  - reproducible research

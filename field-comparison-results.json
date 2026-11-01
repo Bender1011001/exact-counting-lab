@@ -1,0 +1,5679 @@
+{
+  "format": "field-fibers-v1",
+  "utc": "2026-11-01T11:52:24.546098+00:00",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "dd": "0.6.0",
+  "repeats": 3,
+  "worker_timeout_seconds": 30,
+  "timing": "Fresh child per trial; imports/input generation excluded for all methods. Fresh construction, planning, all primes, interpolation and recovery included. Hash computed after timing. Timeout includes imports.",
+  "memory": "No memory instrumentation; assignment caching remains exponential.",
+  "cases": [
+    {
+      "case": [
+        8,
+        71,
+        4,
+        2
+      ],
+      "schedule": "reference",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.3554301000549458,
+            "build_seconds": 0.002328300033695996,
+            "solve_seconds": 1.3531018000212498,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.3899128999910317,
+            "build_seconds": 0.00232749996939674,
+            "solve_seconds": 1.387585400021635,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.328181599965319,
+            "build_seconds": 0.0022149999858811498,
+            "solve_seconds": 1.3259665999794379,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.2965733999735676,
+            "build_seconds": 0.0022630999446846545,
+            "solve_seconds": 1.294310300028883,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.320639299985487,
+            "build_seconds": 0.0025560000212863088,
+            "solve_seconds": 1.3180832999642007,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 1.365394699969329,
+            "build_seconds": 0.00244609999936074,
+            "solve_seconds": 1.3629485999699682,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.8346498999744654,
+            "build_seconds": 0.0022109999554231763,
+            "solve_seconds": 3.832438900019042,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.847143999999389,
+            "build_seconds": 0.00238100002752617,
+            "solve_seconds": 3.844762999971863,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.783316000015475,
+            "build_seconds": 0.0022274000220932066,
+            "solve_seconds": 3.7810885999933816,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.8390306999790482,
+            "build_seconds": 0.0022151999874040484,
+            "solve_seconds": 3.836815499991644,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.8376921000308357,
+            "build_seconds": 0.002274800033774227,
+            "solve_seconds": 3.8354172999970615,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.74650470004417,
+            "build_seconds": 0.0022764999885112047,
+            "solve_seconds": 3.744228200055659,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.706865000014659,
+            "build_seconds": 0.0022210999741218984,
+            "solve_seconds": 3.704643900040537,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.673903499962762,
+            "build_seconds": 0.0022601999808102846,
+            "solve_seconds": 3.6716432999819517,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 3.6532863000174984,
+            "build_seconds": 0.00224459997843951,
+            "solve_seconds": 3.651041700039059,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.013519000029191375,
+            "build_seconds": 0.0022430000244639814,
+            "solve_seconds": 0.011276000004727393,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.012813300010748208,
+            "build_seconds": 0.002236299973446876,
+            "solve_seconds": 0.010577000037301332,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.012866800010669976,
+            "build_seconds": 0.0022319999989122152,
+            "solve_seconds": 0.010634800011757761,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.8850668999948539,
+            "build_seconds": 0.0022247000015340745,
+            "solve_seconds": 0.8828421999933198,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.8765805000439286,
+            "build_seconds": 0.0022427000221796334,
+            "solve_seconds": 0.874337800021749,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.8789990999503061,
+            "build_seconds": 0.0022477999445982277,
+            "solve_seconds": 0.8767513000057079,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.8775063999928534,
+            "build_seconds": 0.002230099984444678,
+            "solve_seconds": 0.8752763000084087,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.88220289995661,
+            "build_seconds": 0.002278300002217293,
+            "solve_seconds": 0.8799245999543928,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.8647047000122257,
+            "build_seconds": 0.0022075999877415597,
+            "solve_seconds": 0.8624971000244841,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.013856099976692349,
+            "build_seconds": 0.0022480999468825758,
+            "solve_seconds": 0.011608000029809773,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.01302940002642572,
+            "build_seconds": 0.0022333000088110566,
+            "solve_seconds": 0.010796100017614663,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.013298699981532991,
+            "build_seconds": 0.002272399957291782,
+            "solve_seconds": 0.011026300024241209,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 11,
+              "taylor_orders": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "029544178a56a7c3a19006765c31ac348da287dec2be9ad0aa88e6f31d296669"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.00010050000855699182
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 9.770004544407129e-05
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.00010519998613744974
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005327000399120152
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005256999866105616
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005362000083550811
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0006424000021070242
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.000603299995418638
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0006095999851822853
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 1.3554301000549458,
+        "field_large": 1.320639299985487,
+        "integer_small": 3.8346498999744654,
+        "residue_small": 3.8376921000308357,
+        "field_small": 3.673903499962762,
+        "contraction_large": 0.012866800010669976,
+        "integer_planned": 0.8789990999503061,
+        "field_planned": 0.8775063999928534,
+        "contraction_planned": 0.013298699981532991,
+        "brute_force": 0.00010050000855699182,
+        "ordinary_elimination": 0.0005327000399120152,
+        "bdd": 0.0006095999851822853
+      },
+      "clauses": [
+        [
+          -6,
+          5,
+          7
+        ],
+        [
+          4,
+          3,
+          1
+        ],
+        [
+          -1,
+          -7,
+          6
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          -7,
+          5,
+          -2
+        ],
+        [
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "case": [
+        8,
+        72,
+        4,
+        2
+      ],
+      "schedule": "reference",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.24707379995379597,
+            "build_seconds": 0.002554499951656908,
+            "solve_seconds": 0.24451930000213906,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.2453710000263527,
+            "build_seconds": 0.0025590999866835773,
+            "solve_seconds": 0.24281190003966913,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.2563838000060059,
+            "build_seconds": 0.0027919000131078064,
+            "solve_seconds": 0.2535918999928981,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.23565719998441637,
+            "build_seconds": 0.0025693000061437488,
+            "solve_seconds": 0.23308789997827262,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.22853709995979443,
+            "build_seconds": 0.0025638999650254846,
+            "solve_seconds": 0.22597319999476895,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.23275160003686324,
+            "build_seconds": 0.0027804000419564545,
+            "solve_seconds": 0.22997119999490678,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.7316080000018701,
+            "build_seconds": 0.0030728999990969896,
+            "solve_seconds": 0.7285351000027731,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.6907681999728084,
+            "build_seconds": 0.0025337999686598778,
+            "solve_seconds": 0.6882344000041485,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.7026819000020623,
+            "build_seconds": 0.002517000015359372,
+            "solve_seconds": 0.700164899986703,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.7238083999836817,
+            "build_seconds": 0.002559599990490824,
+            "solve_seconds": 0.7212487999931909,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.705082600004971,
+            "build_seconds": 0.002543300040997565,
+            "solve_seconds": 0.7025392999639735,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.7034737000358291,
+            "build_seconds": 0.0031476999865844846,
+            "solve_seconds": 0.7003260000492446,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.6538253999897279,
+            "build_seconds": 0.0025335000245831907,
+            "solve_seconds": 0.6512918999651447,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.6682663999963552,
+            "build_seconds": 0.002536599989980459,
+            "solve_seconds": 0.6657298000063747,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.6572573999874294,
+            "build_seconds": 0.002626400033477694,
+            "solve_seconds": 0.6546309999539517,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.017209200013894588,
+            "build_seconds": 0.00259719998575747,
+            "solve_seconds": 0.014612000028137118,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.017509899975266308,
+            "build_seconds": 0.002951699949335307,
+            "solve_seconds": 0.014558200025931,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.018827099993359298,
+            "build_seconds": 0.004436300019733608,
+            "solve_seconds": 0.01439079997362569,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.960266700014472,
+            "build_seconds": 0.0025213000481016934,
+            "solve_seconds": 0.9577453999663703,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9717204000335187,
+            "build_seconds": 0.002641500032041222,
+            "solve_seconds": 0.9690789000014775,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.971999200002756,
+            "build_seconds": 0.002788199984934181,
+            "solve_seconds": 0.9692110000178218,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9575088999699801,
+            "build_seconds": 0.0025520999915897846,
+            "solve_seconds": 0.9549567999783903,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9724315000348724,
+            "build_seconds": 0.002529999997932464,
+            "solve_seconds": 0.96990150003694,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9716756999841891,
+            "build_seconds": 0.002584400004707277,
+            "solve_seconds": 0.9690912999794818,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.017780399997718632,
+            "build_seconds": 0.002556099963840097,
+            "solve_seconds": 0.015224300033878535,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.018171300005633384,
+            "build_seconds": 0.002613699994981289,
+            "solve_seconds": 0.015557600010652095,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.018842699995730072,
+            "build_seconds": 0.0025338000268675387,
+            "solve_seconds": 0.016308899968862534,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "a59e531ecc7d00a2bd96e2bca574904fa0785e24aabea4ee839590d00587f368"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0001002000062726438
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.00010409997776150703
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.00011059996904805303
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007573000038973987
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007533999742008746
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0008050999604165554
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007543999818153679
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007495999452657998
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007531999726779759
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 0.24707379995379597,
+        "field_large": 0.23275160003686324,
+        "integer_small": 0.7026819000020623,
+        "residue_small": 0.705082600004971,
+        "field_small": 0.6572573999874294,
+        "contraction_large": 0.017509899975266308,
+        "integer_planned": 0.9717204000335187,
+        "field_planned": 0.9716756999841891,
+        "contraction_planned": 0.018171300005633384,
+        "brute_force": 0.00010409997776150703,
+        "ordinary_elimination": 0.0007573000038973987,
+        "bdd": 0.0007531999726779759
+      },
+      "clauses": [
+        [
+          -2,
+          7,
+          -5
+        ],
+        [
+          -6,
+          -3,
+          8
+        ],
+        [
+          6,
+          2,
+          -4
+        ],
+        [
+          8,
+          -7,
+          1
+        ],
+        [
+          -6,
+          -8,
+          1
+        ],
+        [
+          -3,
+          -2,
+          7
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          -4,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "case": [
+        8,
+        73,
+        4,
+        2
+      ],
+      "schedule": "reference",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.23899209999945015,
+            "build_seconds": 0.0023557000095024705,
+            "solve_seconds": 0.23663639998994768,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.23421199998119846,
+            "build_seconds": 0.0024265999672934413,
+            "solve_seconds": 0.23178540001390502,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.23693970002932474,
+            "build_seconds": 0.0023705000057816505,
+            "solve_seconds": 0.2345692000235431,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.22775009996257722,
+            "build_seconds": 0.0023565999581478536,
+            "solve_seconds": 0.22539350000442937,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.21527169999899343,
+            "build_seconds": 0.0024627000093460083,
+            "solve_seconds": 0.21280899998964742,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.22124270000495017,
+            "build_seconds": 0.0023612999939359725,
+            "solve_seconds": 0.2188814000110142,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6914148000068963,
+            "build_seconds": 0.0023781000054441392,
+            "solve_seconds": 0.6890367000014521,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6823959999601357,
+            "build_seconds": 0.002409399952739477,
+            "solve_seconds": 0.6799866000073962,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6813221999909729,
+            "build_seconds": 0.002389299974311143,
+            "solve_seconds": 0.6789329000166617,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6934405000065453,
+            "build_seconds": 0.0024643000215291977,
+            "solve_seconds": 0.6909761999850161,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6876983999973163,
+            "build_seconds": 0.0024139999877661467,
+            "solve_seconds": 0.6852844000095502,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6881249999860302,
+            "build_seconds": 0.002389199973549694,
+            "solve_seconds": 0.6857358000124805,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6315535000176169,
+            "build_seconds": 0.0024695000029169023,
+            "solve_seconds": 0.6290840000147,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6378494999953546,
+            "build_seconds": 0.0026017000200226903,
+            "solve_seconds": 0.6352477999753319,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6361325000179932,
+            "build_seconds": 0.002372400020249188,
+            "solve_seconds": 0.633760099997744,
+            "certificate": {
+              "primes": [
+                5,
+                7,
+                11
+              ],
+              "skipped": [],
+              "modulus": 385,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.011198599997442216,
+            "build_seconds": 0.0024193000281229615,
+            "solve_seconds": 0.008779299969319254,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.010602099995594472,
+            "build_seconds": 0.002375999989453703,
+            "solve_seconds": 0.008226100006140769,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.010877499997150153,
+            "build_seconds": 0.002627299982123077,
+            "solve_seconds": 0.008250200015027076,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6662669999641366,
+            "build_seconds": 0.0023404000094160438,
+            "solve_seconds": 0.6639265999547206,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6576108000008389,
+            "build_seconds": 0.002492999949026853,
+            "solve_seconds": 0.6551178000518121,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6601793000008911,
+            "build_seconds": 0.002365900028962642,
+            "solve_seconds": 0.6578133999719284,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6612636999925599,
+            "build_seconds": 0.002378899953328073,
+            "solve_seconds": 0.6588848000392318,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6599206000100821,
+            "build_seconds": 0.0023856000043451786,
+            "solve_seconds": 0.657535000005737,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.6591146999853663,
+            "build_seconds": 0.0023536999942734838,
+            "solve_seconds": 0.6567609999910928,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.011159699992276728,
+            "build_seconds": 0.0025333999656140804,
+            "solve_seconds": 0.008626300026662648,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.011338500014971942,
+            "build_seconds": 0.0023880000226199627,
+            "solve_seconds": 0.008950499992351979,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.011351299996022135,
+            "build_seconds": 0.002362100000027567,
+            "solve_seconds": 0.008989199995994568,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 8,
+              "taylor_orders": {
+                "1": 2,
+                "2": 1,
+                "3": 1,
+                "4": 1
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "4f4b635479f02d39e340a792cce34a0c63bdc665bce120e0b8bd436b72577aad"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010489998385310173
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010230002226307988
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010529998689889908
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0005190999945625663
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0004860999761149287
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0005466000293381512
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0007573000038973987
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.000735200010240078
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0010620999964885414
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 0.23693970002932474,
+        "field_large": 0.22124270000495017,
+        "integer_small": 0.6823959999601357,
+        "residue_small": 0.6881249999860302,
+        "field_small": 0.6361325000179932,
+        "contraction_large": 0.010877499997150153,
+        "integer_planned": 0.6601793000008911,
+        "field_planned": 0.6599206000100821,
+        "contraction_planned": 0.011338500014971942,
+        "brute_force": 0.00010489998385310173,
+        "ordinary_elimination": 0.0005190999945625663,
+        "bdd": 0.0007573000038973987
+      },
+      "clauses": [
+        [
+          5,
+          1,
+          8
+        ],
+        [
+          -2,
+          4,
+          7
+        ],
+        [
+          5,
+          -4,
+          1
+        ],
+        [
+          -7,
+          -2,
+          1
+        ],
+        [
+          -7,
+          2,
+          5
+        ],
+        [
+          4,
+          -3,
+          6
+        ],
+        [
+          -6,
+          -3,
+          8
+        ],
+        [
+          3,
+          8,
+          6
+        ]
+      ]
+    },
+    {
+      "case": [
+        8,
+        71,
+        8,
+        2
+      ],
+      "schedule": "balanced",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.21556650003185496,
+            "build_seconds": 0.003961400012485683,
+            "solve_seconds": 0.21160510001936927,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.2400882999645546,
+            "build_seconds": 0.0036030999617651105,
+            "solve_seconds": 0.2364852000027895,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.21133380004903302,
+            "build_seconds": 0.0035543999983929098,
+            "solve_seconds": 0.2077794000506401,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.20842770003946498,
+            "build_seconds": 0.003514800046104938,
+            "solve_seconds": 0.20491289999336004,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.19901480001863092,
+            "build_seconds": 0.0036610999959520996,
+            "solve_seconds": 0.19535370002267882,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.20269659999758005,
+            "build_seconds": 0.0035069999867118895,
+            "solve_seconds": 0.19918960001086816,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6270525000290945,
+            "build_seconds": 0.0036693000001832843,
+            "solve_seconds": 0.6233832000289112,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6143708999734372,
+            "build_seconds": 0.0036220999900251627,
+            "solve_seconds": 0.610748799983412,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6127686999971047,
+            "build_seconds": 0.0035391999990679324,
+            "solve_seconds": 0.6092294999980368,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6086234000395052,
+            "build_seconds": 0.0035764999920502305,
+            "solve_seconds": 0.605046900047455,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6193576999939978,
+            "build_seconds": 0.0034140999778173864,
+            "solve_seconds": 0.6159436000161804,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6129891999880783,
+            "build_seconds": 0.0034280000254511833,
+            "solve_seconds": 0.6095611999626271,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.5814870999893174,
+            "build_seconds": 0.0035023000091314316,
+            "solve_seconds": 0.5779847999801859,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.6396817000349984,
+            "build_seconds": 0.0034815000253729522,
+            "solve_seconds": 0.6362002000096254,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.5707147999783047,
+            "build_seconds": 0.003486800007522106,
+            "solve_seconds": 0.5672279999707825,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.015751800034195185,
+            "build_seconds": 0.0035337000153958797,
+            "solve_seconds": 0.012218100018799305,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.015796000021509826,
+            "build_seconds": 0.003460400039330125,
+            "solve_seconds": 0.012335599982179701,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.015557100006844848,
+            "build_seconds": 0.003620699979364872,
+            "solve_seconds": 0.011936400027479976,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 21,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03454539994709194,
+            "build_seconds": 0.003437999985180795,
+            "solve_seconds": 0.031107399961911142,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03422469994984567,
+            "build_seconds": 0.0034303999855183065,
+            "solve_seconds": 0.030794299964327365,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03355809999629855,
+            "build_seconds": 0.0034842999884858727,
+            "solve_seconds": 0.03007380000781268,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03248759999405593,
+            "build_seconds": 0.0034196999622508883,
+            "solve_seconds": 0.02906790003180504,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03327999997418374,
+            "build_seconds": 0.003513899981044233,
+            "solve_seconds": 0.029766099993139505,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.03258320002350956,
+            "build_seconds": 0.003407499985769391,
+            "solve_seconds": 0.02917570003774017,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.007863399980124086,
+            "build_seconds": 0.0034957999596372247,
+            "solve_seconds": 0.0043676000204868615,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.007566399988718331,
+            "build_seconds": 0.0034425999619998038,
+            "solve_seconds": 0.004123800026718527,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.008137099968735129,
+            "build_seconds": 0.0037261999677866697,
+            "solve_seconds": 0.004410900000948459,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 1,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "d2c74e1d2329ff854cb8e2577060fbc39eca509c4d01222bf77fb3dfa86d4887"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.00010120001388713717
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 9.929999941959977e-05
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 9.879999561235309e-05
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005321999778971076
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005289000109769404
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0005267999949865043
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.000715400034096092
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0006081000319682062
+          },
+          {
+            "status": "complete",
+            "count": 113,
+            "total_seconds": 0.0006081000319682062
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 0.21556650003185496,
+        "field_large": 0.20269659999758005,
+        "integer_small": 0.6143708999734372,
+        "residue_small": 0.6129891999880783,
+        "field_small": 0.5814870999893174,
+        "contraction_large": 0.015751800034195185,
+        "integer_planned": 0.03422469994984567,
+        "field_planned": 0.03258320002350956,
+        "contraction_planned": 0.007863399980124086,
+        "brute_force": 9.929999941959977e-05,
+        "ordinary_elimination": 0.0005289000109769404,
+        "bdd": 0.0006081000319682062
+      },
+      "clauses": [
+        [
+          -6,
+          5,
+          7
+        ],
+        [
+          4,
+          3,
+          1
+        ],
+        [
+          -1,
+          -7,
+          6
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          -7,
+          5,
+          -2
+        ],
+        [
+          4,
+          1,
+          5
+        ],
+        [
+          4,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "case": [
+        8,
+        72,
+        8,
+        2
+      ],
+      "schedule": "balanced",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.3285281999851577,
+            "build_seconds": 0.004176000016741455,
+            "solve_seconds": 0.32435219996841624,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.3252455000183545,
+            "build_seconds": 0.004137100011575967,
+            "solve_seconds": 0.32110840000677854,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.327934600005392,
+            "build_seconds": 0.0039394000195898116,
+            "solve_seconds": 0.3239951999858022,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.3060702999937348,
+            "build_seconds": 0.004066800000146031,
+            "solve_seconds": 0.3020034999935888,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.30685429996810853,
+            "build_seconds": 0.003954199957661331,
+            "solve_seconds": 0.3029001000104472,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.29787429998395965,
+            "build_seconds": 0.0038964999839663506,
+            "solve_seconds": 0.2939777999999933,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9457838000380434,
+            "build_seconds": 0.004356200050096959,
+            "solve_seconds": 0.9414275999879465,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9317310000187717,
+            "build_seconds": 0.003925900033209473,
+            "solve_seconds": 0.9278050999855623,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9438745999941602,
+            "build_seconds": 0.004047199967317283,
+            "solve_seconds": 0.939827400026843,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9397436000290327,
+            "build_seconds": 0.003962200018577278,
+            "solve_seconds": 0.9357814000104554,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9096273999894038,
+            "build_seconds": 0.004067100002430379,
+            "solve_seconds": 0.9055602999869734,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9519087999942712,
+            "build_seconds": 0.004009699972812086,
+            "solve_seconds": 0.9478991000214592,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9123193999985233,
+            "build_seconds": 0.004003399983048439,
+            "solve_seconds": 0.9083160000154749,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9023329000337981,
+            "build_seconds": 0.004017800034489483,
+            "solve_seconds": 0.8983150999993086,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.9071129999938421,
+            "build_seconds": 0.003942799987271428,
+            "solve_seconds": 0.9031702000065707,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.02166989998659119,
+            "build_seconds": 0.004262300033587962,
+            "solve_seconds": 0.017407599953003228,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.021812600025441498,
+            "build_seconds": 0.003928099991753697,
+            "solve_seconds": 0.0178845000336878,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.021252999955322593,
+            "build_seconds": 0.004065599991008639,
+            "solve_seconds": 0.017187399964313954,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.04237639997154474,
+            "build_seconds": 0.003925299970433116,
+            "solve_seconds": 0.03845110000111163,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0414079999900423,
+            "build_seconds": 0.003968400007579476,
+            "solve_seconds": 0.03743959998246282,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.041681700036861,
+            "build_seconds": 0.004137200012337416,
+            "solve_seconds": 0.037544500024523586,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.042876799998339266,
+            "build_seconds": 0.0039187000365927815,
+            "solve_seconds": 0.038958099961746484,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.04048739996505901,
+            "build_seconds": 0.00394550000783056,
+            "solve_seconds": 0.03654189995722845,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.04060919996118173,
+            "build_seconds": 0.004081499995663762,
+            "solve_seconds": 0.03652769996551797,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.007863500039093196,
+            "build_seconds": 0.003989699995145202,
+            "solve_seconds": 0.0038738000439479947,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.008104900014586747,
+            "build_seconds": 0.003931800019927323,
+            "solve_seconds": 0.004173099994659424,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.007622000004630536,
+            "build_seconds": 0.003993399965111166,
+            "solve_seconds": 0.0036286000395193696,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 0,
+              "taylor_orders": {
+                "1": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "f300033cd4fa2c1e2b6ea299a5ba150ed5870c17dd8bd7ca3ef8f5024e3d2665"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.00010740000288933516
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.00010569998994469643
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.00010619999375194311
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007504000095650554
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007390999817289412
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007520000217482448
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.000754999986384064
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007377999718300998
+          },
+          {
+            "status": "complete",
+            "count": 64,
+            "total_seconds": 0.0007430999539792538
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 0.327934600005392,
+        "field_large": 0.3060702999937348,
+        "integer_small": 0.9438745999941602,
+        "residue_small": 0.9397436000290327,
+        "field_small": 0.9071129999938421,
+        "contraction_large": 0.02166989998659119,
+        "integer_planned": 0.041681700036861,
+        "field_planned": 0.04060919996118173,
+        "contraction_planned": 0.007863500039093196,
+        "brute_force": 0.00010619999375194311,
+        "ordinary_elimination": 0.0007504000095650554,
+        "bdd": 0.0007430999539792538
+      },
+      "clauses": [
+        [
+          -2,
+          7,
+          -5
+        ],
+        [
+          -6,
+          -3,
+          8
+        ],
+        [
+          6,
+          2,
+          -4
+        ],
+        [
+          8,
+          -7,
+          1
+        ],
+        [
+          -6,
+          -8,
+          1
+        ],
+        [
+          -3,
+          -2,
+          7
+        ],
+        [
+          5,
+          4,
+          -1
+        ],
+        [
+          -4,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "case": [
+        8,
+        73,
+        8,
+        2
+      ],
+      "schedule": "balanced",
+      "methods": {
+        "integer_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.3486112999962643,
+            "build_seconds": 0.0039527000044472516,
+            "solve_seconds": 0.344658599991817,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.3345351999741979,
+            "build_seconds": 0.004040099971462041,
+            "solve_seconds": 0.33049510000273585,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.3449519000132568,
+            "build_seconds": 0.0040018000290729105,
+            "solve_seconds": 0.3409500999841839,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "field_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.31785340001806617,
+            "build_seconds": 0.0039659999893046916,
+            "solve_seconds": 0.3138874000287615,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.32225710002239794,
+            "build_seconds": 0.003969700017478317,
+            "solve_seconds": 0.3182874000049196,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.31763930001761764,
+            "build_seconds": 0.004050199990160763,
+            "solve_seconds": 0.3135891000274569,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "integer_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9859013999812305,
+            "build_seconds": 0.0045338000054471195,
+            "solve_seconds": 0.9813675999757834,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 1.0004496999899857,
+            "build_seconds": 0.0041812999988906085,
+            "solve_seconds": 0.9962683999910951,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9911462000454776,
+            "build_seconds": 0.004124300030525774,
+            "solve_seconds": 0.9870219000149518,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "residue_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9758991000126116,
+            "build_seconds": 0.003961600014008582,
+            "solve_seconds": 0.971937499998603,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 1.0064893999951892,
+            "build_seconds": 0.004301300039514899,
+            "solve_seconds": 1.0021880999556743,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.997702400025446,
+            "build_seconds": 0.004225099983159453,
+            "solve_seconds": 0.9934773000422865,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "residue"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "field_small": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9489907000097446,
+            "build_seconds": 0.00458399998024106,
+            "solve_seconds": 0.9444067000295036,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9282875999924727,
+            "build_seconds": 0.004002499976195395,
+            "solve_seconds": 0.9242851000162773,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.9523900999920443,
+            "build_seconds": 0.004014000005554408,
+            "solve_seconds": 0.9483760999864899,
+            "certificate": {
+              "primes": [
+                11,
+                13,
+                17
+              ],
+              "skipped": [],
+              "modulus": 2431,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "contraction_large": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.016984699992462993,
+            "build_seconds": 0.004144400008954108,
+            "solve_seconds": 0.012840299983508885,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.016972500015981495,
+            "build_seconds": 0.003973299986682832,
+            "solve_seconds": 0.012999200029298663,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.016987500013783574,
+            "build_seconds": 0.004014000005554408,
+            "solve_seconds": 0.012973500008229166,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 24,
+              "taylor_orders": null,
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "integer_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.1305121000041254,
+            "build_seconds": 0.003986599971540272,
+            "solve_seconds": 0.12652550003258511,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.12960390001535416,
+            "build_seconds": 0.004051700001582503,
+            "solve_seconds": 0.12555220001377165,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.13451840000925586,
+            "build_seconds": 0.004183000011835247,
+            "solve_seconds": 0.1303353999974206,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "field_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.13239000004250556,
+            "build_seconds": 0.004061500017996877,
+            "solve_seconds": 0.12832850002450868,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.13365999999223277,
+            "build_seconds": 0.004029599949717522,
+            "solve_seconds": 0.12963040004251525,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.13481610000599176,
+            "build_seconds": 0.004079300037119538,
+            "solve_seconds": 0.13073679996887222,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "field"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "contraction_planned": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00969999999506399,
+            "build_seconds": 0.0040259999805130064,
+            "solve_seconds": 0.005674000014550984,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.009852199989836663,
+            "build_seconds": 0.004004099988378584,
+            "solve_seconds": 0.005848100001458079,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.012317000015173107,
+            "build_seconds": 0.00535460002720356,
+            "solve_seconds": 0.0069623999879695475,
+            "certificate": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 196,
+              "bound_certificate": {
+                "kind": "disjoint_original_clauses",
+                "clause_indices": [
+                  0,
+                  1
+                ],
+                "covered_variables": 6,
+                "P_at_zero_checked": true
+              },
+              "degree_bound": 2,
+              "taylor_orders": {
+                "1": 0,
+                "2": 0,
+                "3": 0
+              },
+              "measurement_mode": "integer"
+            },
+            "form_sha256": "1d8916729a44046ff086fb54a7798b5f49fc2d1525bb7825e82cb9418fc4e4e8"
+          }
+        ],
+        "brute_force": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010140001541003585
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010249996557831764
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.00010720000136643648
+          }
+        ],
+        "ordinary_elimination": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0004827000084333122
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0005047000013291836
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0005170999793335795
+          }
+        ],
+        "bdd": [
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.000804700015578419
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0007510000141337514
+          },
+          {
+            "status": "complete",
+            "count": 91,
+            "total_seconds": 0.0007324999896809459
+          }
+        ]
+      },
+      "medians": {
+        "integer_large": 0.3449519000132568,
+        "field_large": 0.31785340001806617,
+        "integer_small": 0.9911462000454776,
+        "residue_small": 0.997702400025446,
+        "field_small": 0.9489907000097446,
+        "contraction_large": 0.016984699992462993,
+        "integer_planned": 0.1305121000041254,
+        "field_planned": 0.13365999999223277,
+        "contraction_planned": 0.009852199989836663,
+        "brute_force": 0.00010249996557831764,
+        "ordinary_elimination": 0.0005047000013291836,
+        "bdd": 0.0007510000141337514
+      },
+      "clauses": [
+        [
+          5,
+          1,
+          8
+        ],
+        [
+          -2,
+          4,
+          7
+        ],
+        [
+          5,
+          -4,
+          1
+        ],
+        [
+          -7,
+          -2,
+          1
+        ],
+        [
+          -7,
+          2,
+          5
+        ],
+        [
+          4,
+          -3,
+          6
+        ],
+        [
+          -6,
+          -3,
+          8
+        ],
+        [
+          3,
+          8,
+          6
+        ]
+      ]
+    }
+  ]
+}

@@ -1,104 +1,177 @@
 # Exact Counting Lab
 
-**Experimental v0.1.0.** Reproducible component experiments inspired by the ETH preprint, extending Chelsea A. McElveen's attributed community implementation. Start with `python example.py`: all three methods should report **32** satisfying assignments. Core execution requires only Python's standard library.
+**Exact #SAT / model-counting experiments in Python, with reproducible benchmarks and explicit limits.**
 
-The lead contribution is an exact input-specific auxiliary constructor. In three small controlled comparisons, complete pipeline speedups over the eager constructor with its expensive global membership audit disabled were **1.54x, 10.59x, and 10.68x**. Conventional methods remained faster: one case took 8.51 ms here, versus 0.089 ms for brute force and 0.489 ms for BDD. These are recorded October 30 measurements, not predictions for larger inputs. See [the full experiment and limitations](IMPLICIT_DESIGN.md).
+[![Exact verification](https://github.com/Bender1011001/exact-counting-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/Bender1011001/exact-counting-lab/actions/workflows/verify.yml)
+[![Release](https://img.shields.io/github/v/release/Bender1011001/exact-counting-lab?include_prereleases)](https://github.com/Bender1011001/exact-counting-lab/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](#quick-start)
 
-A portable research prototype for replacing components in the rational-interpolation route of **The Exponential Time Hypothesis is False**. It includes an attributed executable reference, an exact cardinality-weighted regrouping, truncated-moment experiments, and modular arithmetic with certified integer CRT recovery.
+An independent research laboratory for the rational-interpolation route in the
+OpenAI preprint *The Exponential Time Hypothesis is False*. It extends
+[Chelsea A. McElveen's community implementation](https://github.com/chelsinchaos/measurement-indexed-counting)
+with interchangeable exact components, independent checks, and comparisons with
+brute force, variable elimination, and binary decision diagrams (BDDs).
 
-**Current claim:** the replacements improve the specified community reference on measured toy instances. A conventional contraction backend also beats brute force on a narrow structured family, but **ordinary elimination, BDD, and a specialized recurrence remain much faster on that family**. The latest input-specific auxiliary constructor gives additional measured setup/full-pipeline improvements, including an explicit control for expensive upstream self-checks. This is not a practical general SAT solver, a vulnerability scanner, an implementation of the sharper Appendix D algorithm, or a new asymptotic bound. Novelty has not been established. See [contraction experiments](CONTRACTION.md) for results through 64 variables and [implicit construction experiments](IMPLICIT_DESIGN.md) for the latest work. The full suite now passes 4,639 checks.
+**Status: experimental.** Component improvements are measured on small synthetic
+instances. Established counting methods remain faster on the latest cases.
+General solver superiority, mathematical novelty, and a new asymptotic bound
+have not been established.
 
-## Run
+[Quick start](#quick-start) · [Results](#measured-results) · [How it works](#how-it-works) · [Contribute](CONTRIBUTING.md) · [Releases](https://github.com/Bender1011001/exact-counting-lab/releases)
 
-Python 3.10 or newer. The core code uses only the standard library.
+## Quick start
 
-```text
-python verify.py
+Python 3.10 or newer; the core uses only the standard library. CI tests Python
+3.11 and 3.12 on Windows and Linux.
+
+```sh
+git clone https://github.com/Bender1011001/exact-counting-lab.git
+cd exact-counting-lab
 python example.py
-python run_benchmarks.py --profile quick --repeats 3
-```
-
-For the established BDD baseline, install the optional requirements in an isolated environment:
-
-```text
-python -m pip install -r requirements-baseline.txt
-python run_benchmarks.py --profile quick --repeats 3 --memory
-```
-
-`--memory` performs a separate instrumented run and reports Python allocation peaks, not total process memory. `--profile expanded` includes additional seeds and 8-variable cases and can take several minutes. Use normal Python execution: the inherited verification routines use assertions, and the entrypoints reject `-O`.
-
-## What changed
-
-The original reconstruction makes a restricted query for each nested pair of subsets. Regrouping the exact finite sum replaces those repeated queries with queries carrying a cardinality histogram. The histogram weights are alternating partial binomial sums. A moment variant carries only the truncated coefficients needed at the current order.
-
-The modular backend performs exact arithmetic in suitable finite fields, interpolates there, and reconstructs the final nonnegative integer once the combined modulus exceeds its known bound. It rejects invalid primes and insufficient modulus. The modular adapter is serial and temporarily swaps reference arithmetic inside a context manager; it is not thread-safe.
-
-See `DERIVATION.md` for the regrouping identity and its scope.
-
-A further exact pruning step is available as `cofactor_reconstruction`.
-When the Taylor order covers every active correction coordinate, all
-nonzero-cardinality terms cancel. The implementation excludes those
-assignments before evaluating clauses. Otherwise it uses the histogram
-unchanged. This is a special-case reduction in work, not a new counting bound.
-
-## Benchmark interpretation
-
-The new portable runner times per-run design construction, reconstruction, and interpolation/recovery, with a rotated method order and exact count comparisons. It always includes brute force and includes `dd.autoref` when installed. Common input generation and imports are excluded for all methods. These timings differ in methodology from earlier exploratory tables and should be compared within one generated report.
-
-The original and optimized implementations cache local assignments. Do not ascribe the paper's polynomial-space guarantee to this code. The default CRT prime pool is finite; larger inputs can require additional primes. Weighted-query overhead can outweigh fewer queries. Tiny input sizes cannot establish a practical large-instance crossover.
-
-The original reconstruction and histogram/cofactor replacements win no comparison against the included conventional baselines on the measured tiny cases below. The later contraction experiment and its structured brute-force wins are reported separately in `CONTRACTION.md`. Publish losses as well as improvements. A claim about faster model counting than established solvers, or faster security analysis, requires additional evidence.
-
-Fresh portable quick run on 2026-10-30, median of three runs, in seconds:
-
-| Case (n=6) | Original reference | Rational histogram | Modular histogram | Original/modular | BDD |
-|---|---:|---:|---:|---:|---:|
-| Auxiliary, seed 1 | 1.10997 | 0.15597 | 0.07729 | 14.36x | 0.000363 |
-| Auxiliary, seed 2 | 1.22985 | 0.25326 | 0.12753 | 9.64x | 0.000351 |
-| Direct, seed 1 | 0.19868 | 0.14644 | 0.12567 | 1.58x | 0.000317 |
-
-Brute force took about 0.000026–0.000028 seconds in these cases. Peak traced Python allocations were roughly 78–178 KB for the modular method, versus 79–169 KB for the original; there is no consistent memory reduction. Exact counts were 32, 34, and 32, respectively, across all methods. These results reproduce the narrow reference speedup and the failure to beat the conventional baselines. Full samples, precision, platform, and instrumentation details are in `sample-results.json`.
-
-## Cofactor pruning follow-up
-
-Fresh 2026-10-30 comparison with the preceding modular histogram backend,
-median of three complete runs including construction and recovery:
-
-| Case | Previous modular (s) | Pruned modular (s) | Previous/pruned | Brute force (s) | BDD (s) |
-|---|---:|---:|---:|---:|---:|
-| n=6, auxiliary seed 1 | 0.073910 | 0.023458 | 3.15x | 0.0000254 | 0.000346 |
-| n=6, auxiliary seed 2 | 0.117558 | 0.025685 | 4.58x | 0.0000283 | 0.000346 |
-| n=8, auxiliary seed 1 | 0.840542 | 0.091278 | 9.21x | 0.0001001 | 0.000525 |
-| n=6, direct order 1 | 0.123354 | 0.121386 | 1.02x | 0.0000255 | 0.000313 |
-| n=6, direct order 2 | 0.205596 | 0.208929 | 0.98x | 0.0000259 | 0.000316 |
-
-The last two cases take the unchanged fallback; their work counters are
-identical and the small timing differences are not an algorithmic gain.
-All 407 verification checks pass. All 88 additional audited modular
-coefficients agree with the preceding backend. On n=8, clause evaluations
-fall from 33,264 to 2,688; the 256 restricted queries are unchanged.
-Traced Python memory is not consistently lower: the n=8 modular peak changes
-from 149,544 to 155,328 bytes. Exact counts agree with brute force and BDD
-in every timed and memory-instrumented run.
-
-The pruned cases enumerate subsets of 5-7 active coordinates out of 6-8 total
-variables. This is still nearly exhaustive. Brute force and BDD remain much
-faster. These results do not establish a useful crossover at larger n.
-Raw samples and counters are in `cofactor-results.json` and
-`cofactor-audit.json`; reproduce with:
-
-```text
 python verify.py
-python cofactor_checks.py --audit-output cofactor-audit.json
-python run_benchmarks.py --profile pruning --methods rational_histogram modular_histogram rational_cofactor modular_cofactor --repeats 3 --memory --output cofactor-results.json
 ```
 
-## Attribution and provenance
+The worked example prints:
 
-The unmodified `third_party/measurement_toy.py` is Chelsea A. McElveen's MIT-licensed executable exposition from commit `7a73e39b11c71d2b3c7209074e04e84208612b58` of https://github.com/chelsinchaos/measurement-indexed-counting . Its full license is retained in `third_party/LICENSE.txt`.
+```text
+Six-variable synthetic formula, seed 1
+Polynomial pipeline: 32
+Brute force: 32
+Ordinary elimination: 32
+CRT primes used: 1
+Agreement checks passed. Use the benchmark runners for timings.
+```
 
-The reference module SHA-256 is `e7a103af1d10f8442f98f79ee66eabf8190861473b45f5051f8d223008e4cb64`. New code is provided under the MIT terms in `LICENSE`; the upstream copyright remains intact.
+The complete suite passes **6,430 checks**, including exhaustive coefficient
+comparisons, complete counts, resource/error controls, and interpolation tests.
+Use normal Python execution; verification requires assertions enabled.
 
-The mathematical source is https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf . This package is independent of OpenAI and the reference author; it is not an official implementation or endorsement. No full proof certification is claimed.
+For benchmarks with the optional established BDD baseline, install the pinned
+requirement in a virtual environment:
 
-This experimental package contains synthetic benchmarks. It does not include vehicle firmware, licensed reverse-engineering software, device captures, or the separate machine-specific firmware-verification experiment. GitHub Actions runs exact verification and the worked example on Windows and Linux with Python 3.11 and 3.12.
+```sh
+python -m pip install -r requirements-baseline.txt
+python field_benchmarks.py --repeats 3 --output local-results/field.json
+```
+
+## What you can explore
+
+| Component | What it does | Read more |
+|---|---|---|
+| Input-specific auxiliary construction | Queries only the operator entries needed by the input | [Derivation and controlled comparisons](IMPLICIT_DESIGN.md) |
+| Cardinality-weighted reconstruction | Regroups repeated restricted sums and prunes cancelling terms | [Exact identity](DERIVATION.md) |
+| Finite-field measurement fibers | Computes foreign measurement bases and labels modulo the current prime | [Field fibers](FIELD_FIBERS.md) |
+| Certified Taylor planning | Uses actual occurrence degrees to request sufficient interpolation data | [Degree certificate](FIELD_FIBERS.md#request-only-certified-necessary-interpolation-data) |
+| Exact modular recovery | Reconstructs the integer count once the CRT modulus exceeds a certified bound | [Implementation](modular_lab.py) |
+| Reusable contraction plans | Evaluates integer or truncated-polynomial factors by variable elimination | [Contraction experiments](CONTRACTION.md) |
+
+## Measured results
+
+The auxiliary constructor gave **1.54-10.68x** complete-pipeline improvements on
+three small cases against an eager constructor with its expensive global
+membership audit disabled. One case took 8.51 ms here, versus 0.089 ms for brute
+force and 0.489 ms for BDD. See [the October 30 controlled experiment](IMPLICIT_DESIGN.md).
+
+The November 1 follow-up combines field preparation with certified Taylor
+planning. Each row below is a complete count, median of three fresh-process
+runs, including construction and recovery. Both columns use the same forms
+and cofactor backend; only the representation/planning options change.
+
+| Eight-variable case | Prior pipeline | Field + degree plan | Prior / new |
+|---|---:|---:|---:|
+| Reference schedule, seed 71 | 1,355.43 ms | 877.51 ms | 1.54x |
+| Reference schedule, seed 72 | 247.07 ms | 971.68 ms | **0.25x** |
+| Reference schedule, seed 73 | 236.94 ms | 659.92 ms | **0.36x** |
+| Balanced schedule, seed 71 | 215.57 ms | 32.58 ms | 6.62x |
+| Balanced schedule, seed 72 | 327.93 ms | 40.61 ms | 8.08x |
+| Balanced schedule, seed 73 | 344.95 ms | 133.66 ms | 2.58x |
+
+**Ratios below one are slower.** Lower Taylor orders can disable a useful
+pruning shortcut, which explains the two losses. The balanced cases have
+very low-degree deformations, including one constant deformation. Ordinary
+elimination takes roughly 0.5-0.8 ms on these same inputs; brute force and BDD
+also win. The new options remain opt-in.
+
+Small-prime experiments were slower overall, and the measured inputs showed no
+new measurement collisions. Keep these negative results in view when choosing
+an experiment. [Full ablations, proof, raw data, and limitations](FIELD_FIBERS.md)
+explain what each gain can and cannot establish.
+
+Earlier measurements, memory observations, and cofactor experiments are retained
+in [the benchmark history](BENCHMARK_HISTORY.md). Structured experiments through
+64 variables are in [CONTRACTION.md](CONTRACTION.md).
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[Boolean formula] --> B[Exact replacement forms]
+    B --> C[Certified Taylor plan]
+    C --> D[Evaluate over each prime field]
+    D --> E[Hermite interpolation]
+    E --> F[CRT with certified bound]
+    F --> G[Exact integer count]
+```
+
+The degree bound limits how much Taylor data is needed. At each prime, finite-field
+measurements can group equivalent labels while retaining every assignment and
+its multiplicity. CRT combines the residues until the integer answer is unique
+within the certified range.
+
+Try the new options on a design from `example.py`:
+
+```python
+count, certificate = modular_lab.exact_modular_count(
+    design, cnf.n, order,
+    reconstruction=lab.cofactor_reconstruction,
+    measurement_mode="field",  # default: "integer"
+    use_form_degree=True,       # default: False
+    use_disjoint_bound=True,
+)
+```
+
+This is a research interface over the bundled design objects. A general-purpose
+DIMACS command-line solver is not provided.
+
+## Independent Wolfram check
+
+The optional Mathematica audit expands complete symbolic counting polynomials
+from the exported rational inputs and checks their Taylor coefficients against
+Python. Mathematica 15.0.1 agreed on **63 coefficients** across three synthetic
+designs. A local Wolfram license is needed only for this additional audit.
+
+```sh
+python export_field_wolfram.py
+wolframscript -file verify-field-fibers.wl
+```
+
+[Audit script](verify-field-fibers.wl) · [Exact inputs](field-wolfram-input.json) · [Recorded result](field-wolfram-results.json)
+
+## Scope and limitations
+
+- This investigates the rational-interpolation route, not the sharper Appendix D algorithm.
+- Cached assignments can use exponential space; the paper's polynomial-space bound does not apply to this implementation.
+- The prime pool and construction limits are finite. The modular adapter is serial and not thread-safe.
+- A large nominal auxiliary dimension is not a large solved Boolean instance.
+- Small synthetic benchmarks do not establish a practical large-instance crossover.
+- Full manuscript correctness and the Lean formalization have not been independently certified here.
+
+## Attribution and license
+
+The unmodified [reference module](third_party/measurement_toy.py) is Chelsea A.
+McElveen's MIT-licensed executable exposition, pinned to commit
+`7a73e39b11c71d2b3c7209074e04e84208612b58` of
+[measurement-indexed-counting](https://github.com/chelsinchaos/measurement-indexed-counting).
+Its [full license](third_party/LICENSE.txt) is retained. Reference SHA-256:
+`e7a103af1d10f8442f98f79ee66eabf8190861473b45f5051f8d223008e4cb64`.
+
+The mathematical source is the [OpenAI ETH preprint](https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf),
+examined at repository commit `4eaee87548250b2682affda7d05d947c05554bae`.
+This project is independent of OpenAI and the reference author.
+New code is [MIT licensed](LICENSE); upstream attribution remains intact.
+All included fixtures are synthetic/public.
+
+Questions, reproducible failures, and focused improvements are welcome through
+[issues](https://github.com/Bender1011001/exact-counting-lab/issues) and pull requests.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the measurement standards and next experiments.

@@ -1,0 +1,23 @@
+{
+	"kernel":"15.0.1 for Microsoft Windows (64-bit) (July 2, 2026)",
+	"coefficient_vector_checks":21,
+	"scalar_coefficients_checked":63,
+	"passed":true,
+	"cases":[
+		{
+			"n":6,
+			"degree":1,
+			"count_at_zero":32
+		},
+		{
+			"n":5,
+			"degree":7,
+			"count_at_zero":17
+		},
+		{
+			"n":5,
+			"degree":5,
+			"count_at_zero":19
+		}
+	]
+}

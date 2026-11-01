@@ -1,11 +1,15 @@
-# v0.1.0 — experimental research release
+# v0.2.0 — experimental field fibers and Taylor planning
 
-Independent exact-counting experiments extending Chelsea A. McElveen's MIT-licensed community reference for the OpenAI ETH preprint.
+This release adds two opt-in components and improves the research documentation.
 
-Included: exact input-specific auxiliary construction, spectral and required measurement bases, cardinality-weighted reconstruction, cofactor pruning, finite-field interpolation and certified CRT recovery, a conventional contraction backend, synthetic benchmarks with established baselines, derivations, raw results, and 4,639 verification checks. Run `python example.py` for a six-variable example with count 32, then `python verify.py`.
+- Finite-field measurement preparation (`measurement_mode="field"`) rebuilds the required basis modulo each prime and retains assignment multiplicities. A residue-only control is also available.
+- Certified Taylor planning (`use_form_degree=True`) bounds the degree from the actual occurrence forms and requests sufficient Hermite conditions.
+- The full Python suite passes 6,430 checks. An independent Mathematica 15.0.1 expansion agrees on 63 coefficients.
+- The six-case, three-repeat benchmark includes 216 complete runs, exact-count and form-hash audits, conventional baselines, small-prime controls, and separate measurement-domain diagnostics.
+- README now includes a quick start, CI/release/license badges, a pipeline diagram, balanced results, and contribution/citation guidance.
 
-Controlled full-pipeline improvements against the eager constructor with its expensive global membership audit disabled were 1.54–10.68x on three small cases. Conventional methods remain faster on those cases. Larger apparent reference speedups include removing exhaustive self-check overhead. Negative results and degeneracies are retained.
+Combined full-pipeline gains on the three balanced-schedule cases were 6.62x, 8.08x, and 2.58x. Two reference-schedule cases became 3.93x and 2.79x slower because lower Taylor orders disabled cofactor pruning. Small-prime runs were slower overall, and no measurement-domain reduction occurred in the measured cases. The new modes therefore remain opt-in.
 
-This is a research prototype. No general solver superiority, new asymptotic bound, mathematical novelty, full-paper proof certification, or security-analysis advantage is established. It implements experiments on the rational-interpolation route, not the sharper Appendix D algorithm. Cached local assignments can use exponential space. The finite prime pool and explicit construction limits constrain supported inputs; the modular adapter is serial and not thread-safe.
+Conventional counting methods still win all six cases. These are component experiments on small synthetic inputs, including low-degree and constant deformations. No general solver superiority, new asymptotic bound, novelty, or full-paper certification is claimed. See FIELD_FIBERS.md for exact methodology, ablations, and limitations.
 
-Historical timings were collected locally on October 30, 2026; see raw JSON for samples and environment. Attribution, source commit and SHA-256 are in README.md; the upstream license is retained in third_party/LICENSE.txt. No proprietary fixtures or licensed applications are included.
+Run `python example.py` and `python verify.py`. Benchmarks additionally use the optional pinned BDD requirement. Wolfram is optional; the core remains standard-library Python. The attributed upstream reference remains unchanged.
