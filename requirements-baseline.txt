@@ -1,0 +1,2 @@
+# Optional established BDD baseline; the counting experiments use the stdlib.
+dd==0.6.0

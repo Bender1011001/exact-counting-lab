@@ -1,0 +1,684 @@
+{
+  "format": "eth-reconstruction-component-benchmark-v1",
+  "utc": "2026-10-30T21:19:20.632005+00:00",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "repeats": 3,
+  "profile": "pruning",
+  "pipelines": [
+    "rational_histogram",
+    "modular_histogram",
+    "rational_cofactor",
+    "modular_cofactor"
+  ],
+  "timing": "Full per-run design construction, reconstruction, interpolation/recovery. Common input generation and module imports excluded; order rotated.",
+  "memory": "Optional separate tracemalloc peaks: Python allocations only, not total process RSS or native allocations.",
+  "scope": "Exact toy counting; original is the attributed community reference. No production-solver superiority or novelty claim.",
+  "cases": [
+    {
+      "arguments": [
+        6,
+        1,
+        "aux",
+        1
+      ],
+      "clauses": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          -2
+        ],
+        [
+          -4,
+          5,
+          -1
+        ],
+        [
+          5,
+          1,
+          -3
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ]
+      ],
+      "count": 32,
+      "q": 7,
+      "points": 2,
+      "active_coordinates": [
+        5,
+        5
+      ],
+      "bdd_version": "0.6.0",
+      "methods": {
+        "rational_histogram": {
+          "seconds": [
+            0.14368059998378158,
+            0.14566380000906065,
+            0.14383650000672787
+          ],
+          "detail": {
+            "restricted_queries": 64
+          },
+          "median_seconds": 0.14383650000672787,
+          "python_traced_peak_bytes": 82424
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.07305889995768666,
+            0.07396589999552816,
+            0.07390969997504726
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.07390969997504726,
+          "python_traced_peak_bytes": 78092
+        },
+        "rational_cofactor": {
+          "seconds": [
+            0.047634400019887835,
+            0.04820419999305159,
+            0.047155599982943386
+          ],
+          "detail": {
+            "restricted_queries": 64
+          },
+          "median_seconds": 0.047634400019887835,
+          "python_traced_peak_bytes": 81936
+        },
+        "modular_cofactor": {
+          "seconds": [
+            0.023627999995369464,
+            0.023457799979951233,
+            0.022839499986730516
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.023457799979951233,
+          "python_traced_peak_bytes": 77644
+        },
+        "brute_force": {
+          "seconds": [
+            2.540001878514886e-05,
+            2.640002639964223e-05,
+            2.5200017262250185e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.540001878514886e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.0004225000157020986,
+            0.00034609995782375336,
+            0.0003284999984316528
+          ],
+          "detail": {
+            "root_nodes": 13
+          },
+          "median_seconds": 0.00034609995782375336,
+          "python_traced_peak_bytes": 11770
+        }
+      }
+    },
+    {
+      "arguments": [
+        6,
+        2,
+        "aux",
+        1
+      ],
+      "clauses": [
+        [
+          1,
+          6,
+          -5
+        ],
+        [
+          -3,
+          -6,
+          2
+        ],
+        [
+          -4,
+          6,
+          3
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          5,
+          2,
+          3
+        ]
+      ],
+      "count": 34,
+      "q": 7,
+      "points": 2,
+      "active_coordinates": [
+        6,
+        6
+      ],
+      "bdd_version": "0.6.0",
+      "methods": {
+        "rational_histogram": {
+          "seconds": [
+            0.23782769998069853,
+            0.23762420000275597,
+            0.25151670002378523
+          ],
+          "detail": {
+            "restricted_queries": 128
+          },
+          "median_seconds": 0.23782769998069853,
+          "python_traced_peak_bytes": 88664
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.11834470002213493,
+            0.11729580000974238,
+            0.11755810002796352
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.11755810002796352,
+          "python_traced_peak_bytes": 81064
+        },
+        "rational_cofactor": {
+          "seconds": [
+            0.0513924999977462,
+            0.05062530003488064,
+            0.05062390002422035
+          ],
+          "detail": {
+            "restricted_queries": 128
+          },
+          "median_seconds": 0.05062530003488064,
+          "python_traced_peak_bytes": 88184
+        },
+        "modular_cofactor": {
+          "seconds": [
+            0.025482800032477826,
+            0.025684699998237193,
+            0.025711199967190623
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.025684699998237193,
+          "python_traced_peak_bytes": 80376
+        },
+        "brute_force": {
+          "seconds": [
+            2.9499991796910763e-05,
+            2.829998265951872e-05,
+            2.619996666908264e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.829998265951872e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.0003493999829515815,
+            0.0003449000068940222,
+            0.0003457000129856169
+          ],
+          "detail": {
+            "root_nodes": 15
+          },
+          "median_seconds": 0.0003457000129856169,
+          "python_traced_peak_bytes": 11818
+        }
+      }
+    },
+    {
+      "arguments": [
+        8,
+        1,
+        "aux",
+        1
+      ],
+      "clauses": [
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          7,
+          8,
+          -2
+        ],
+        [
+          -7,
+          5,
+          -1
+        ],
+        [
+          2,
+          -3,
+          1
+        ],
+        [
+          -5,
+          -7,
+          -3
+        ],
+        [
+          8,
+          -4,
+          -2
+        ],
+        [
+          -6,
+          -4,
+          -8
+        ]
+      ],
+      "count": 85,
+      "q": 10,
+      "points": 2,
+      "active_coordinates": [
+        7,
+        7
+      ],
+      "bdd_version": "0.6.0",
+      "methods": {
+        "rational_histogram": {
+          "seconds": [
+            1.7282091000233777,
+            1.741507200000342,
+            1.8092019999749027
+          ],
+          "detail": {
+            "restricted_queries": 256
+          },
+          "median_seconds": 1.741507200000342,
+          "python_traced_peak_bytes": 168936
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.8405418999609537,
+            0.8381197000271641,
+            0.8608020000392571
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 256
+            }
+          },
+          "median_seconds": 0.8405418999609537,
+          "python_traced_peak_bytes": 149544
+        },
+        "rational_cofactor": {
+          "seconds": [
+            0.19932329998118803,
+            0.19277389999479055,
+            0.19116810004925355
+          ],
+          "detail": {
+            "restricted_queries": 256
+          },
+          "median_seconds": 0.19277389999479055,
+          "python_traced_peak_bytes": 169640
+        },
+        "modular_cofactor": {
+          "seconds": [
+            0.09680110000772402,
+            0.09012240002630278,
+            0.09127780003473163
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 256
+            }
+          },
+          "median_seconds": 0.09127780003473163,
+          "python_traced_peak_bytes": 155328
+        },
+        "brute_force": {
+          "seconds": [
+            9.919999865815043e-05,
+            0.00010169995948672295,
+            0.00010009994730353355
+          ],
+          "detail": {},
+          "median_seconds": 0.00010009994730353355,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.0005254999850876629,
+            0.0005216000135987997,
+            0.0005296000163070858
+          ],
+          "detail": {
+            "root_nodes": 33
+          },
+          "median_seconds": 0.0005254999850876629,
+          "python_traced_peak_bytes": 26056
+        }
+      }
+    },
+    {
+      "arguments": [
+        6,
+        1,
+        "direct",
+        1
+      ],
+      "clauses": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          -2
+        ],
+        [
+          -4,
+          5,
+          -1
+        ],
+        [
+          5,
+          1,
+          -3
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ]
+      ],
+      "count": 32,
+      "q": 1,
+      "points": 8,
+      "active_coordinates": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "bdd_version": "0.6.0",
+      "methods": {
+        "rational_histogram": {
+          "seconds": [
+            0.14055569999618456,
+            0.1408670000382699,
+            0.14502739999443293
+          ],
+          "detail": {
+            "restricted_queries": 56
+          },
+          "median_seconds": 0.1408670000382699,
+          "python_traced_peak_bytes": 173400
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.11997629998950288,
+            0.12335370003711432,
+            0.12625679996563122
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.12335370003711432,
+          "python_traced_peak_bytes": 177592
+        },
+        "rational_cofactor": {
+          "seconds": [
+            0.1431555000017397,
+            0.13991999998688698,
+            0.14366370002971962
+          ],
+          "detail": {
+            "restricted_queries": 56
+          },
+          "median_seconds": 0.1431555000017397,
+          "python_traced_peak_bytes": 173400
+        },
+        "modular_cofactor": {
+          "seconds": [
+            0.12138609995599836,
+            0.11877419997472316,
+            0.12276839994592592
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.12138609995599836,
+          "python_traced_peak_bytes": 177592
+        },
+        "brute_force": {
+          "seconds": [
+            2.5500019546598196e-05,
+            2.5799963623285294e-05,
+            2.47000134550035e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.5500019546598196e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.0003163000219501555,
+            0.00031259999377653003,
+            0.00030800001695752144
+          ],
+          "detail": {
+            "root_nodes": 13
+          },
+          "median_seconds": 0.00031259999377653003,
+          "python_traced_peak_bytes": 11546
+        }
+      }
+    },
+    {
+      "arguments": [
+        6,
+        1,
+        "direct",
+        2
+      ],
+      "clauses": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          -2
+        ],
+        [
+          -4,
+          5,
+          -1
+        ],
+        [
+          5,
+          1,
+          -3
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ]
+      ],
+      "count": 32,
+      "q": 2,
+      "points": 6,
+      "active_coordinates": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "bdd_version": "0.6.0",
+      "methods": {
+        "rational_histogram": {
+          "seconds": [
+            0.23837450001155958,
+            0.23383069998817518,
+            0.24202370003331453
+          ],
+          "detail": {
+            "restricted_queries": 132
+          },
+          "median_seconds": 0.23837450001155958,
+          "python_traced_peak_bytes": 144064
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.21258140000281855,
+            0.2055955000105314,
+            0.20349899999564514
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.2055955000105314,
+          "python_traced_peak_bytes": 145852
+        },
+        "rational_cofactor": {
+          "seconds": [
+            0.24069549998966977,
+            0.23146650003036484,
+            0.23743179999291897
+          ],
+          "detail": {
+            "restricted_queries": 132
+          },
+          "median_seconds": 0.23743179999291897,
+          "python_traced_peak_bytes": 144064
+        },
+        "modular_cofactor": {
+          "seconds": [
+            0.208928800013382,
+            0.20028749998891726,
+            0.21075480000581592
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.208928800013382,
+          "python_traced_peak_bytes": 145852
+        },
+        "brute_force": {
+          "seconds": [
+            2.589996438473463e-05,
+            2.619996666908264e-05,
+            2.570002106949687e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.589996438473463e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.00043000001460313797,
+            0.0003160000196658075,
+            0.0003083999617956579
+          ],
+          "detail": {
+            "root_nodes": 13
+          },
+          "median_seconds": 0.0003160000196658075,
+          "python_traced_peak_bytes": 11498
+        }
+      }
+    }
+  ]
+}

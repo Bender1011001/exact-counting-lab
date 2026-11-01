@@ -1,0 +1,325 @@
+{
+  "format": "eth-reconstruction-component-benchmark-v1",
+  "utc": "2026-10-30T21:09:21.357035+00:00",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "repeats": 3,
+  "profile": "quick",
+  "timing": "Full per-run design construction, reconstruction, interpolation/recovery. Common input generation and module imports excluded; order rotated.",
+  "memory": "Optional separate tracemalloc peaks: Python allocations only, not total process RSS or native allocations.",
+  "scope": "Exact toy counting; original is the attributed community reference. No production-solver superiority or novelty claim.",
+  "cases": [
+    {
+      "arguments": [
+        6,
+        1,
+        "aux",
+        1
+      ],
+      "clauses": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          -2
+        ],
+        [
+          -4,
+          5,
+          -1
+        ],
+        [
+          5,
+          1,
+          -3
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ]
+      ],
+      "count": 32,
+      "bdd_version": "0.6.0",
+      "methods": {
+        "original": {
+          "seconds": [
+            1.1105053000501357,
+            1.1099721000064164,
+            1.0951867999974638
+          ],
+          "detail": {
+            "restricted_queries": 1458
+          },
+          "median_seconds": 1.1099721000064164,
+          "python_traced_peak_bytes": 79120
+        },
+        "rational_histogram": {
+          "seconds": [
+            0.15323340002214536,
+            0.15615470003103837,
+            0.15596910001477227
+          ],
+          "detail": {
+            "restricted_queries": 64
+          },
+          "median_seconds": 0.15596910001477227,
+          "python_traced_peak_bytes": 82424
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.07704309996915981,
+            0.08127059997059405,
+            0.07729440002003685
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.07729440002003685,
+          "python_traced_peak_bytes": 78172
+        },
+        "brute_force": {
+          "seconds": [
+            2.619996666908264e-05,
+            2.74000340141356e-05,
+            2.659996971487999e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.659996971487999e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.00041989999590441585,
+            0.00036319997161626816,
+            0.0003258000360801816
+          ],
+          "detail": {
+            "root_nodes": 13
+          },
+          "median_seconds": 0.00036319997161626816,
+          "python_traced_peak_bytes": 11770
+        }
+      }
+    },
+    {
+      "arguments": [
+        6,
+        2,
+        "aux",
+        1
+      ],
+      "clauses": [
+        [
+          1,
+          6,
+          -5
+        ],
+        [
+          -3,
+          -6,
+          2
+        ],
+        [
+          -4,
+          6,
+          3
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          5,
+          2,
+          3
+        ]
+      ],
+      "count": 34,
+      "bdd_version": "0.6.0",
+      "methods": {
+        "original": {
+          "seconds": [
+            1.2438070999924093,
+            1.2298454999690875,
+            1.2001114999875426
+          ],
+          "detail": {
+            "restricted_queries": 1458
+          },
+          "median_seconds": 1.2298454999690875,
+          "python_traced_peak_bytes": 81464
+        },
+        "rational_histogram": {
+          "seconds": [
+            0.25619849999202415,
+            0.25325949996476993,
+            0.2498990999883972
+          ],
+          "detail": {
+            "restricted_queries": 128
+          },
+          "median_seconds": 0.25325949996476993,
+          "python_traced_peak_bytes": 88736
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.12753339996561408,
+            0.13511840003775433,
+            0.1225292999879457
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.12753339996561408,
+          "python_traced_peak_bytes": 81136
+        },
+        "brute_force": {
+          "seconds": [
+            2.8300040867179632e-05,
+            2.8199981898069382e-05,
+            2.6399968191981316e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.8199981898069382e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.00034769997000694275,
+            0.0003512999974191189,
+            0.0004293000092729926
+          ],
+          "detail": {
+            "root_nodes": 15
+          },
+          "median_seconds": 0.0003512999974191189,
+          "python_traced_peak_bytes": 11818
+        }
+      }
+    },
+    {
+      "arguments": [
+        6,
+        1,
+        "direct",
+        1
+      ],
+      "clauses": [
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          6,
+          4,
+          -2
+        ],
+        [
+          -4,
+          5,
+          -1
+        ],
+        [
+          5,
+          1,
+          -3
+        ],
+        [
+          -6,
+          -4,
+          -2
+        ]
+      ],
+      "count": 32,
+      "bdd_version": "0.6.0",
+      "methods": {
+        "original": {
+          "seconds": [
+            0.22109270002692938,
+            0.19868420000420883,
+            0.19406220002565533
+          ],
+          "detail": {
+            "restricted_queries": 104
+          },
+          "median_seconds": 0.19868420000420883,
+          "python_traced_peak_bytes": 168904
+        },
+        "rational_histogram": {
+          "seconds": [
+            0.14643849997082725,
+            0.14463330002035946,
+            0.14843240001937374
+          ],
+          "detail": {
+            "restricted_queries": 56
+          },
+          "median_seconds": 0.14643849997082725,
+          "python_traced_peak_bytes": 173400
+        },
+        "modular_histogram": {
+          "seconds": [
+            0.12300490000052378,
+            0.12581240001600236,
+            0.1256711999885738
+          ],
+          "detail": {
+            "crt": {
+              "primes": [
+                2147483647
+              ],
+              "skipped": [],
+              "modulus": 2147483647,
+              "upper_bound": 64
+            }
+          },
+          "median_seconds": 0.1256711999885738,
+          "python_traced_peak_bytes": 177688
+        },
+        "brute_force": {
+          "seconds": [
+            2.4600012693554163e-05,
+            2.6300025638192892e-05,
+            2.559996210038662e-05
+          ],
+          "detail": {},
+          "median_seconds": 2.559996210038662e-05,
+          "python_traced_peak_bytes": 640
+        },
+        "bdd": {
+          "seconds": [
+            0.00032489997101947665,
+            0.0003165999660268426,
+            0.00031289999606087804
+          ],
+          "detail": {
+            "root_nodes": 13
+          },
+          "median_seconds": 0.0003165999660268426,
+          "python_traced_peak_bytes": 11626
+        }
+      }
+    }
+  ]
+}

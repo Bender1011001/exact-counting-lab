@@ -1,0 +1,1430 @@
+{
+  "format": "implicit-auxiliary-design-v1",
+  "utc": "2026-10-31T00:42:30.578388+00:00",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "profile": "audit_ablation",
+  "repeats": 3,
+  "timeout_seconds": 30.0,
+  "timing": "Fresh child per trial, imports/input excluded; design and full requested solve included. Diagnostics excluded. No extrapolation of timeouts.",
+  "diagnostic": "Unrestricted measurement tuples and correction subset counts are separate statistics; their product is not a runtime estimate. Rank alone does not determine the number of distinct measurements.",
+  "memory": "No process-memory benchmark was performed.",
+  "cases": [
+    {
+      "case": [
+        8,
+        1,
+        3,
+        2
+      ],
+      "schedules": "reference",
+      "methods": {
+        "eager_no_span_audit_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.009231999982148409,
+              "solve_seconds": 0.010748300002887845,
+              "total_seconds": 0.019980299985036254
+            },
+            {
+              "build_seconds": 0.009794600016903132,
+              "solve_seconds": 0.011093699955381453,
+              "total_seconds": 0.020888299972284585
+            },
+            {
+              "build_seconds": 0.00945700000738725,
+              "solve_seconds": 0.010766999970655888,
+              "total_seconds": 0.02022399997804314
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 64,
+            "q": 7,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "e5dd82a5ba9a7b988525c11fa0b004e3e0ffaf3129f18a1649b5481687e6b4c6",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  5
+                ],
+                "distinct_measurements": [
+                  8,
+                  16
+                ],
+                "unrestricted_tuples": 128,
+                "unrestricted_tuple_lower_bound": 128,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  5,
+                  3
+                ],
+                "distinct_measurements": [
+                  16,
+                  8
+                ],
+                "unrestricted_tuples": 128,
+                "unrestricted_tuple_lower_bound": 128,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  4
+                ],
+                "distinct_measurements": [
+                  16,
+                  8
+                ],
+                "unrestricted_tuples": 128,
+                "unrestricted_tuple_lower_bound": 128,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              }
+            ],
+            "operator_entries_queried": null,
+            "operator_rows_built": null,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.00945700000738725,
+            "solve_seconds": 0.010766999970655888,
+            "total_seconds": 0.02022399997804314
+          }
+        },
+        "sparse_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.0019638999947346747,
+              "solve_seconds": 0.01111800002399832,
+              "total_seconds": 0.013081900018732995
+            },
+            {
+              "build_seconds": 0.0020173999946564436,
+              "solve_seconds": 0.01145280001219362,
+              "total_seconds": 0.013470200006850064
+            },
+            {
+              "build_seconds": 0.0019057000172324479,
+              "solve_seconds": 0.010933199955616146,
+              "total_seconds": 0.012838899972848594
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 64,
+            "q": 7,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "e5dd82a5ba9a7b988525c11fa0b004e3e0ffaf3129f18a1649b5481687e6b4c6",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  12,
+                  8
+                ],
+                "unrestricted_tuples": 96,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              }
+            ],
+            "operator_entries_queried": 0,
+            "operator_rows_built": 21,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.0019638999947346747,
+            "solve_seconds": 0.01111800002399832,
+            "total_seconds": 0.013081900018732995
+          }
+        },
+        "required_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.00214830000186339,
+              "solve_seconds": 0.01128819998120889,
+              "total_seconds": 0.013436499983072281
+            },
+            {
+              "build_seconds": 0.002173699962440878,
+              "solve_seconds": 0.01099199999589473,
+              "total_seconds": 0.013165699958335608
+            },
+            {
+              "build_seconds": 0.002084999985527247,
+              "solve_seconds": 0.011023600003682077,
+              "total_seconds": 0.013108599989209324
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 64,
+            "q": 7,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "e5dd82a5ba9a7b988525c11fa0b004e3e0ffaf3129f18a1649b5481687e6b4c6",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  12,
+                  8
+                ],
+                "unrestricted_tuples": 96,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 7,
+                "subset_queries": 128
+              }
+            ],
+            "operator_entries_queried": 231,
+            "operator_rows_built": 0,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.00214830000186339,
+            "solve_seconds": 0.011023600003682077,
+            "total_seconds": 0.013165699958335608
+          }
+        }
+      },
+      "baselines": {
+        "brute_force": {
+          "seconds": [
+            0.00011070002801716328,
+            9.679998038336635e-05,
+            9.560002945363522e-05
+          ],
+          "median_seconds": 9.679998038336635e-05,
+          "count": 85
+        },
+        "ordinary_elimination": {
+          "seconds": [
+            0.0004124999977648258,
+            0.00041959999362006783,
+            0.0003127999952994287
+          ],
+          "median_seconds": 0.0004124999977648258,
+          "count": 85
+        },
+        "bdd": {
+          "seconds": [
+            0.0006290000164881349,
+            0.0004940999788232148,
+            0.0004901000065729022
+          ],
+          "median_seconds": 0.0004940999788232148,
+          "count": 85
+        }
+      }
+    },
+    {
+      "case": [
+        8,
+        1,
+        4,
+        2
+      ],
+      "schedules": "reference",
+      "methods": {
+        "eager_no_span_audit_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.0814568999921903,
+              "solve_seconds": 0.006261799950152636,
+              "total_seconds": 0.08771869994234294
+            },
+            {
+              "build_seconds": 0.08360790001461282,
+              "solve_seconds": 0.006521999952383339,
+              "total_seconds": 0.09012989996699616
+            },
+            {
+              "build_seconds": 0.08502299996325746,
+              "solve_seconds": 0.006383100000675768,
+              "total_seconds": 0.09140609996393323
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 5,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "f71b932ae0b0237141e330f445f6bf6d12e6e929026f4069ed333b9c1e74ea59",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  8,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  13,
+                  0
+                ],
+                "distinct_measurements": [
+                  256,
+                  1
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 257,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  6,
+                  7
+                ],
+                "distinct_measurements": [
+                  16,
+                  16
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  6,
+                  7
+                ],
+                "distinct_measurements": [
+                  16,
+                  16
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  6,
+                  7
+                ],
+                "distinct_measurements": [
+                  16,
+                  16
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              }
+            ],
+            "operator_entries_queried": null,
+            "operator_rows_built": null,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.08360790001461282,
+            "solve_seconds": 0.006383100000675768,
+            "total_seconds": 0.09012989996699616
+          }
+        },
+        "sparse_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.0020117999520152807,
+              "solve_seconds": 0.006388999987393618,
+              "total_seconds": 0.008400799939408898
+            },
+            {
+              "build_seconds": 0.002014600031543523,
+              "solve_seconds": 0.006574500002898276,
+              "total_seconds": 0.008589100034441799
+            },
+            {
+              "build_seconds": 0.0020238999859429896,
+              "solve_seconds": 0.006703099992591888,
+              "total_seconds": 0.008726999978534877
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 5,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "f71b932ae0b0237141e330f445f6bf6d12e6e929026f4069ed333b9c1e74ea59",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  7,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  7,
+                  0
+                ],
+                "distinct_measurements": [
+                  128,
+                  1
+                ],
+                "unrestricted_tuples": 128,
+                "unrestricted_tuple_lower_bound": 128,
+                "local_assignments": 257,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  2
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  2
+                ],
+                "distinct_measurements": [
+                  8,
+                  4
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  4
+                ],
+                "distinct_measurements": [
+                  16,
+                  16
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              }
+            ],
+            "operator_entries_queried": 0,
+            "operator_rows_built": 21,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.002014600031543523,
+            "solve_seconds": 0.006574500002898276,
+            "total_seconds": 0.008589100034441799
+          }
+        },
+        "required_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.0019690999761223793,
+              "solve_seconds": 0.006542299990542233,
+              "total_seconds": 0.008511399966664612
+            },
+            {
+              "build_seconds": 0.002101500052958727,
+              "solve_seconds": 0.006480400043074042,
+              "total_seconds": 0.008581900096032768
+            },
+            {
+              "build_seconds": 0.0019926000386476517,
+              "solve_seconds": 0.006511299987323582,
+              "total_seconds": 0.008503900025971234
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 5,
+            "declared_degree": 1,
+            "actual_degree": 1,
+            "form_sha256": "f71b932ae0b0237141e330f445f6bf6d12e6e929026f4069ed333b9c1e74ea59",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  7,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  7,
+                  0
+                ],
+                "distinct_measurements": [
+                  128,
+                  1
+                ],
+                "unrestricted_tuples": 128,
+                "unrestricted_tuple_lower_bound": 128,
+                "local_assignments": 257,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  2
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  2
+                ],
+                "distinct_measurements": [
+                  8,
+                  4
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  4,
+                  4
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  4
+                ],
+                "distinct_measurements": [
+                  16,
+                  16
+                ],
+                "unrestricted_tuples": 256,
+                "unrestricted_tuple_lower_bound": 256,
+                "local_assignments": 32,
+                "active_corrections": 5,
+                "subset_queries": 32
+              }
+            ],
+            "operator_entries_queried": 231,
+            "operator_rows_built": 0,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.0019926000386476517,
+            "solve_seconds": 0.006511299987323582,
+            "total_seconds": 0.008511399966664612
+          }
+        }
+      },
+      "baselines": {
+        "brute_force": {
+          "seconds": [
+            9.250000584870577e-05,
+            8.87999776750803e-05,
+            8.610001532360911e-05
+          ],
+          "median_seconds": 8.87999776750803e-05,
+          "count": 85
+        },
+        "ordinary_elimination": {
+          "seconds": [
+            0.0003469999646767974,
+            0.0003163000219501555,
+            0.0003018999705091119
+          ],
+          "median_seconds": 0.0003163000219501555,
+          "count": 85
+        },
+        "bdd": {
+          "seconds": [
+            0.0005530000198632479,
+            0.0004891999997198582,
+            0.00046929996460676193
+          ],
+          "median_seconds": 0.0004891999997198582,
+          "count": 85
+        }
+      }
+    },
+    {
+      "case": [
+        8,
+        1,
+        4,
+        3
+      ],
+      "schedules": "reference",
+      "methods": {
+        "eager_no_span_audit_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.11029869999038056,
+              "solve_seconds": 0.008381099964026362,
+              "total_seconds": 0.11867979995440692
+            },
+            {
+              "build_seconds": 0.11286530003417283,
+              "solve_seconds": 0.00837549997959286,
+              "total_seconds": 0.12124080001376569
+            },
+            {
+              "build_seconds": 0.10969879996264353,
+              "solve_seconds": 0.008412200026214123,
+              "total_seconds": 0.11811099998885766
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 10,
+            "declared_degree": 2,
+            "actual_degree": 2,
+            "form_sha256": "80796dff54f308882899b8e89f5327d6d88ec4095083260c84c6e0247cb3909b",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  6,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  7,
+                  0
+                ],
+                "distinct_measurements": [
+                  64,
+                  1
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 257,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  4
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  4,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              }
+            ],
+            "operator_entries_queried": null,
+            "operator_rows_built": null,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.11029869999038056,
+            "solve_seconds": 0.008381099964026362,
+            "total_seconds": 0.11867979995440692
+          }
+        },
+        "sparse_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.0032378999749198556,
+              "solve_seconds": 0.009174800012260675,
+              "total_seconds": 0.012412699987180531
+            },
+            {
+              "build_seconds": 0.003036600013729185,
+              "solve_seconds": 0.008861100010108203,
+              "total_seconds": 0.011897700023837388
+            },
+            {
+              "build_seconds": 0.0031577000045217574,
+              "solve_seconds": 0.008687699970323592,
+              "total_seconds": 0.01184539997484535
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 10,
+            "declared_degree": 2,
+            "actual_degree": 2,
+            "form_sha256": "80796dff54f308882899b8e89f5327d6d88ec4095083260c84c6e0247cb3909b",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  5,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  5,
+                  0
+                ],
+                "distinct_measurements": [
+                  32,
+                  1
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 257,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  2,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  2,
+                  3
+                ],
+                "distinct_measurements": [
+                  4,
+                  8
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  2,
+                  2
+                ],
+                "raw_measurement_rows": [
+                  2,
+                  2
+                ],
+                "distinct_measurements": [
+                  4,
+                  4
+                ],
+                "unrestricted_tuples": 16,
+                "unrestricted_tuple_lower_bound": 16,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              }
+            ],
+            "operator_entries_queried": 0,
+            "operator_rows_built": 21,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.0031577000045217574,
+            "solve_seconds": 0.008861100010108203,
+            "total_seconds": 0.011897700023837388
+          }
+        },
+        "required_contraction": {
+          "runs": [
+            {
+              "build_seconds": 0.002654600015375763,
+              "solve_seconds": 0.008452799986116588,
+              "total_seconds": 0.011107400001492351
+            },
+            {
+              "build_seconds": 0.002472400024998933,
+              "solve_seconds": 0.009408699988853186,
+              "total_seconds": 0.01188110001385212
+            },
+            {
+              "build_seconds": 0.0024769000010564923,
+              "solve_seconds": 0.00835329998517409,
+              "total_seconds": 0.010830199986230582
+            }
+          ],
+          "status": "complete",
+          "count": 85,
+          "certificate": {
+            "primes": [
+              2147483647
+            ],
+            "skipped": [],
+            "modulus": 2147483647,
+            "upper_bound": 196,
+            "bound_certificate": {
+              "kind": "disjoint_original_clauses",
+              "clause_indices": [
+                0,
+                1
+              ],
+              "covered_variables": 6,
+              "P_at_zero_checked": true
+            }
+          },
+          "design": {
+            "nominal_auxiliary_coordinates": 256,
+            "q": 10,
+            "declared_degree": 2,
+            "actual_degree": 2,
+            "form_sha256": "80796dff54f308882899b8e89f5327d6d88ec4095083260c84c6e0247cb3909b",
+            "points": [
+              {
+                "point": 1,
+                "group_sizes": [
+                  8,
+                  0
+                ],
+                "measurement_ranks": [
+                  5,
+                  0
+                ],
+                "raw_measurement_rows": [
+                  5,
+                  0
+                ],
+                "distinct_measurements": [
+                  32,
+                  1
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 257,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 2,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  2,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  2,
+                  3
+                ],
+                "distinct_measurements": [
+                  4,
+                  8
+                ],
+                "unrestricted_tuples": 32,
+                "unrestricted_tuple_lower_bound": 32,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 3,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  2,
+                  2
+                ],
+                "raw_measurement_rows": [
+                  2,
+                  2
+                ],
+                "distinct_measurements": [
+                  4,
+                  4
+                ],
+                "unrestricted_tuples": 16,
+                "unrestricted_tuple_lower_bound": 16,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              },
+              {
+                "point": 4,
+                "group_sizes": [
+                  4,
+                  4
+                ],
+                "measurement_ranks": [
+                  3,
+                  3
+                ],
+                "raw_measurement_rows": [
+                  3,
+                  3
+                ],
+                "distinct_measurements": [
+                  8,
+                  8
+                ],
+                "unrestricted_tuples": 64,
+                "unrestricted_tuple_lower_bound": 64,
+                "local_assignments": 32,
+                "active_corrections": 8,
+                "subset_queries": 256
+              }
+            ],
+            "operator_entries_queried": 231,
+            "operator_rows_built": 0,
+            "labels_used": 21,
+            "copies": 1
+          },
+          "medians": {
+            "build_seconds": 0.0024769000010564923,
+            "solve_seconds": 0.008452799986116588,
+            "total_seconds": 0.011107400001492351
+          }
+        }
+      },
+      "baselines": {
+        "brute_force": {
+          "seconds": [
+            9.240000508725643e-05,
+            8.979998528957367e-05,
+            8.819997310638428e-05
+          ],
+          "median_seconds": 8.979998528957367e-05,
+          "count": 85
+        },
+        "ordinary_elimination": {
+          "seconds": [
+            0.0003569999826140702,
+            0.00032300001475960016,
+            0.0003071000101044774
+          ],
+          "median_seconds": 0.00032300001475960016,
+          "count": 85
+        },
+        "bdd": {
+          "seconds": [
+            0.0005458999658003449,
+            0.00048809999134391546,
+            0.0005392000311985612
+          ],
+          "median_seconds": 0.0005392000311985612,
+          "count": 85
+        }
+      }
+    }
+  ]
+}

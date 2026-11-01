@@ -1,0 +1,112 @@
+[
+  {
+    "arguments": [
+      6,
+      1,
+      "aux",
+      1
+    ],
+    "all_coefficients_equal": true,
+    "coefficients_compared": 16,
+    "before": {
+      "tuples": 272,
+      "assignment_evals": 1044,
+      "clause_evals": 2700,
+      "restricted_sums": 64
+    },
+    "after": {
+      "tuples": 128,
+      "assignment_evals": 256,
+      "clause_evals": 640,
+      "restricted_sums": 64
+    }
+  },
+  {
+    "arguments": [
+      6,
+      2,
+      "aux",
+      1
+    ],
+    "all_coefficients_equal": true,
+    "coefficients_compared": 16,
+    "before": {
+      "tuples": 576,
+      "assignment_evals": 1890,
+      "clause_evals": 4536,
+      "restricted_sums": 128
+    },
+    "after": {
+      "tuples": 128,
+      "assignment_evals": 256,
+      "clause_evals": 640,
+      "restricted_sums": 128
+    }
+  },
+  {
+    "arguments": [
+      8,
+      1,
+      "aux",
+      1
+    ],
+    "all_coefficients_equal": true,
+    "coefficients_compared": 22,
+    "before": {
+      "tuples": 2176,
+      "assignment_evals": 9288,
+      "clause_evals": 33264,
+      "restricted_sums": 256
+    },
+    "after": {
+      "tuples": 256,
+      "assignment_evals": 768,
+      "clause_evals": 2688,
+      "restricted_sums": 256
+    }
+  },
+  {
+    "arguments": [
+      6,
+      1,
+      "direct",
+      1
+    ],
+    "all_coefficients_equal": true,
+    "coefficients_compared": 16,
+    "before": {
+      "tuples": 352,
+      "assignment_evals": 1792,
+      "clause_evals": 4736,
+      "restricted_sums": 56
+    },
+    "after": {
+      "tuples": 352,
+      "assignment_evals": 1792,
+      "clause_evals": 4736,
+      "restricted_sums": 56
+    }
+  },
+  {
+    "arguments": [
+      6,
+      1,
+      "direct",
+      2
+    ],
+    "all_coefficients_equal": true,
+    "coefficients_compared": 18,
+    "before": {
+      "tuples": 660,
+      "assignment_evals": 2928,
+      "clause_evals": 7680,
+      "restricted_sums": 132
+    },
+    "after": {
+      "tuples": 660,
+      "assignment_evals": 2928,
+      "clause_evals": 7680,
+      "restricted_sums": 132
+    }
+  }
+]

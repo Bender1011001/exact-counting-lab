@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve the attributed reference's exact recorded bytes across platforms.
+third_party/measurement_toy.py -text whitespace=cr-at-eol
